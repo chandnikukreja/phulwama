@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+<h1>वीर जवान <h1>
+<marquee>आज लहू केसर बन जाए,
+दुश्मन को ललकार कर।
+आज उठा बंदूक है भारत,
+वीरों की जयकार कर।</marquee>
+  <img src="banner1.jpg" width="100%">
+</div>
+
+<div class="topnav">
+  <a href="index.html">Home </a>
+  <a href="soliders.html">About Soliders</a>
+
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="demo.jpg" width="80%">
+    <p>A 'black day' in the history of India - February 14, 2021 marks two years of the Pulwama terror attack, when 40 Indian soldiers were martyred in one of the worst terror attacks in Jammu and Kashmir. It happened after a suicide bomber rammed an IED-laden vehicle into the security convoy. The convoy had 78 buses in which around 2,500 personnel were travelling from Jammu to Srinagar. The attack, which was reported near Awantipora at nearly 3:15 pm resulted in the death of 40 CRPF jawans, while many others were left injured.</p>
+  </div>
+  <div class="column">
+    <img src="banner3.jpg">
+    <p>Today it's two years since the Pulwama terror attack. On February 14, 2019, 40 brave Indian soldiers died in the line of duty after a suicide bomber, Adil Ahmad Dar, rammed an explosive-laden vehicle into the security convoy carrying them. Tributes to the brave soldiers are pouring in on social media. Akshay Kumar, Suniel Shetty led Bollywood in paying homage to the jawans. "Remembering our bravehearts of Pulwama Attack, we will always remain indebted for your supreme sacrifice,</p>
+  </div>
+  
+  <div class="column">
+   <img src="banner5.jpg" width="100%">
+    <p>Respect and gives the trbuite all the brave soliders </p>
+</div>
+
+</body>
+</html>
